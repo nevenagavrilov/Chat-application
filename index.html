@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/chat.css">
+    <script type="text/javascript" src="js/conversation.js"></script>
+    <script type="text/javascript" src="json/conversations.json"></script>
+    <title>Chat app</title>
+</head>
+<body>
+  <div id= "chat-container">
+      <div id="search-container">
+            <input type="text" placeholder="search"/>
+      </div>
+      <div id="conversation-list">
+        <div class="conversation" id="John">
+            <img src="images/john.jpg" alt="john picture" id="John"/>
+            <div class="title-text" id="John">
+                This is my status
+            </div>
+            <div class="created-date" id="John">
+                Apr 15
+            </div>
+            <div class="conversation-message" id="John">
+                This is a message
+            </div>
+        </div>          
+        <div class="conversation" id="Amy">
+            <img src="images/amy.jpg" alt="amy picture" id="Amy"/>
+            <div class="title-text" id="Amy">
+                I love oranges
+            </div>
+            <div class="created-date" id="Amy">
+                Apr 15
+            </div>
+            <div class="conversation-message" id="Amy">
+                This is a message
+            </div>
+        </div>
+        <div class="conversation" id= "Jack">
+            <img src="images/jack.jpg" alt="jack picture" id= "Jack"/>
+            <div class="title-text" id= "Jack">
+                Hello, I'm Jack
+            </div>
+            <div class="created-date" id= "Jack">
+                Apr 15
+            </div>
+            <div class="conversation-message" id= "Jack">
+                This is a message
+            </div>
+        </div>  
+      </div>
+      <div id="new-message-container">
+        <a href="#">+</a>
+      </div>
+      <div id="chat-title">
+        <span>chat title</span>
+        <img src="images/trash-logo.jpg" alt="delete conversation"/>
+      </div>
+      <div id="chat-message-list">
+          <!--
+        <div class="message-row you-message">
+            <div class="message-content">
+                <div class="message-text">Ok then</div>
+                <div class="message-time">Apr 15</div>
+            </div>
+        </div>
+        <div class="message-row other-message">
+            <div class="message-content">
+                <div class="message-text">Yeah I think it's the best we can do.</div>
+                <div class="message-time">Apr 15</div>
+            </div>
+        </div>   
+          -->         
+      </div>
+      <div id="chat-form">
+        <img src="images/attachment-logo.jpg" alt="add attachment"/>
+        <input type="text" placeholder="type a message" id="new_message"/>
+        <button id="send_button">send message</button>
+    </div>   
+  </div>  
+
+</body>
+</html>
